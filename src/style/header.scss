@@ -1,0 +1,49 @@
+
+.header{
+    background-color: lightgray;
+    height: 75px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    
+
+    &__rightColumn {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        align-self: center;
+    }
+
+    &__leftColumn {
+        align-items: center;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+.header__nav-link {
+    display: flex;
+    justify-content: center; 
+    align-items: space-around;
+}
+
+.link__header{
+    font-family: $font-Monts;
+    color: $color-gray;
+    font-weight: 500;
+
+    &:hover {
+        transition: .2s all ease;
+        letter-spacing: .4px;
+        font-size: 1.1em;
+        text-decoration: none;
+        color: $color-gold;
+        border-bottom: 1px solid $color-gold;
+    }
+}
+
+.logo {
+    margin-top: -10px;
+    height: 100px;
+    width:175px;
+    align-self: center;
+}

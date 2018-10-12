@@ -1,0 +1,80 @@
+
+
+//
+
+.footer {
+
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: [logo-s] 350px [logo-e s] 1fr [e]; 
+    grid-template-rows:[logo-s links-s] 1fr [links-e social-s] 1fr [social-e logo-e];
+
+    &__logo {
+        grid-column: logo-s/logo-e;
+        grid-row: logo-s/logo-e;
+
+        img {
+            margin-top: -10px;
+            height: 300px;
+            width:350px;
+            align-self: center;
+        }
+    }
+
+    &__links {
+        grid-row: links-s/links-e;
+        align-self: end;
+        height: 30px;
+
+        a {
+            font-family: $font-Monts;
+            color: $color-gray;
+            font-weight: 500;
+            &:hover {
+                transition: .2s all ease;
+                letter-spacing: .4px;
+                font-size: 1.1em;
+                text-decoration: none;
+                color: $color-gold;
+                underline: 1px;
+            }
+        }
+    }
+
+    &__social {
+        grid-row: social-s/social-e;
+        align-self: start;
+        margin: 30px 0px;
+        justify-items: center;
+
+        &__icon {
+            font-size: 2em;
+        }
+    }
+
+    &__social,
+    &__links {
+        justify-self: center;
+        // display: flex;
+        // justify-content: center;
+        display: grid;
+        grid-template-rows: 1fr;
+        width: 50%;
+        // grid-template-columns: repeat(auto-fill, 1fr);
+        justify-items: center;
+        
+        & > * {
+            grid-row: 1/-1;
+            margin: 0px 50px;
+        }
+        
+
+        grid-column: s/e;
+    }
+}
+
+
+
+
+
+

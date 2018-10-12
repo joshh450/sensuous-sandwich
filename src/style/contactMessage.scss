@@ -1,0 +1,92 @@
+
+
+.company-metadata-sidebar-wrapper > .logo img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form > .form-group {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.form input {
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: inherit;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 3px solid black;
+    width: 75%;
+    display: block;
+    transition: all 0.3s;
+}
+.form input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.568);
+}
+.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.568);
+}
+.form input:focus::-webkit-input-placeholder, .form textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+.form textarea {
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: inherit;
+    width: 75%;
+    margin-top: 20px;
+    height:150px;
+    border-radius: 3px;
+    border: 3px solid black;
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    transition: all 0.3s;
+}
+.form textarea:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border: 3px solid rgba(0, 0, 0, 0.568);
+}
+.form label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0px;
+    display: block;
+    transition: all 0.3s;
+    color: rgba(0, 0, 0, 0.568);
+    visibility: hidden;
+    opacity: 0;
+}
+.form input:focus + label, .form textarea:focus + label {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(1rem);
+}
+.btn {
+    background-color: black;
+    color: white;
+    font-size: 1.25em;
+    padding: 10px 25px;
+    border: 1px solid black;
+    border-radius: 2px;
+    outline: none;
+    transition: 0.3s;
+}
+.btn:active {
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+.gridContact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 150px;
+}
+
+.contact-grid-wrapper {
+    margin-left: 35px;
+}

@@ -1,0 +1,36 @@
+.menuItems {
+    margin-top: 450px;
+    height: 1050px;
+    justify-content: center;
+    display: block;
+}
+
+.sandwiches {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    font-family: $font-Monts;
+    background-color: lightgray;
+    
+
+    &__header{
+      justify-self: center; 
+      color: $color-gold;
+      border-bottom: 1px solid $color-gray; 
+    }
+    &__sandwich {
+        margin-top: 15px;
+        font-size: 22px;
+    }
+    &__contents {
+
+    }
+}
+
+.parallaxHeader {
+    color:white;
+    font-family: $font-Monts;
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 525px;
+}
